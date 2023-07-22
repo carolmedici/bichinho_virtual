@@ -49,10 +49,17 @@ public class Programa_Bichinho_virtual {
 		System.out.println(Bichinho.nascer());
 		
 		System.out.println("Gostaria de alimentar o bichinho?");
+		System.out.println();
 		System.out.println("1 - Sim  | 2 - Não");
 		int alimentar = sc.nextInt();
 		if(alimentar == 1) {
 			System.out.println("Escolha a comida que você deseja: ");
+		
+			System.out.println("1 - Cenoura: 20cal");
+			System.out.println("2 - Maçã: 15cal ");
+			System.out.println("3 - Frango: 50cal ");
+			System.out.println("4 - Peixe: 40cal ");
+			
 			int comida = sc.nextInt();
 			String tipoComida = "";
 			
