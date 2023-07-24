@@ -62,25 +62,35 @@ public class Programa_Bichinho_virtual {
 			
 			int comida = sc.nextInt();
 			String tipoComida = "";
+			int caloriasComida = 0;
 			
 			switch (comida) {
 			case 1:
 				tipoComida= "Cenoura";
+				caloriasComida = 20;
 			break;
 			case 2: 
 				tipoComida="Maçã";
+				caloriasComida = 15;
 				break;
 			case 3: 
 				tipoComida="Frango";
+				caloriasComida = 50;
 				break;
+				
 			case 4: 
 				tipoComida="Peixe";
+				caloriasComida = 40;
 				break;
 			}
+
+			Bichinho.comer(tipoComida, caloriasComida);
 		}
+		
 	
 	sc.close();
 	
 	
 	
 }}
+
