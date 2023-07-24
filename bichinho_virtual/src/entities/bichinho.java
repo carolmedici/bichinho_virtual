@@ -8,6 +8,7 @@ public class bichinho {
 	private boolean estado;
 	private int caloria;
 	private int forca;
+	
 
 	public bichinho(String nome, String tipo, int idade, int caloria, int forca) {
 		super();
@@ -73,7 +74,7 @@ public class bichinho {
 				+ " nasceu :)"
 				+ " Idade: "
 				+ idade
-				+ " ano(s). Tipo:"
+				+ " ano(s). Tipo: "
 				+ tipo
 				+ ". Estado: Vivo"
 				+ ". Calorias: "
@@ -81,6 +82,24 @@ public class bichinho {
 				+ ". Força: "
 				+ forca
 				+ ".";
+	}
+	
+	public void comer(String comida, int caloriasComida) {
+        caloria += caloriasComida;
+        System.out.println(nome 
+				+ " comeu "
+				+ comida
+				+ " Dados atualizados."
+				+ " Idade: "
+				+ idade
+				+ " ano(s). Tipo: "
+				+ tipo
+				+ ". Estado: Vivo"
+				+ ". Calorias: "
+				+ caloria
+				+ ". Força: "
+				+ forca
+				+ ".");
 	}
 	
 	
