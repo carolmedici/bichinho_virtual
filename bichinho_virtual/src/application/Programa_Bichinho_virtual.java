@@ -40,6 +40,7 @@ public class Programa_Bichinho_virtual {
 			break;
 		}
 		
+		
 		int idade = 0;
 		int calorias = 50;
 		int forca = 0;
@@ -87,10 +88,26 @@ public class Programa_Bichinho_virtual {
 			Bichinho.comer(tipoComida, caloriasComida);
 		}
 		
+		
+		System.out.println();
+		System.out.println("Gostaria de brincar? ");
+		System.out.println("Gasto calórico: 10 cal");
+		System.out.println("1 - Sim  | 2 - Não");
+		int brincar = sc.nextInt();
+		int caloriasGasta = 0;
+		if(brincar == 1) {
+			forca += 10;
+			caloriasGasta = -10;
+			
+			
+		}
+		
+		Bichinho.brincar(caloriasGasta, forca);
+		
+		
 	
 	sc.close();
 	
 	
 	
 }}
-
