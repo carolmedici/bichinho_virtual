@@ -102,6 +102,22 @@ public class bichinho {
 				+ ".");
 	}
 	
-	
+	public void brincar( int caloriasGasta, int forcaAdquirida) {
+        caloria += caloriasGasta;
+        forca += forcaAdquirida;
+        System.out.println(nome 
+				+ " brincou muito!"
+				+ " Dados atualizados."
+				+ " Idade: "
+				+ idade
+				+ " ano(s). Tipo: "
+				+ tipo
+				+ ". Estado: Vivo"
+				+ ". Calorias: "
+				+ caloria
+				+ ". Força: "
+				+ forca
+				+ ".");
+	}
 	
 }
