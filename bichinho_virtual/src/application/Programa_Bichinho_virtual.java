@@ -40,6 +40,7 @@ public class Programa_Bichinho_virtual {
 			break;
 		}
 		
+		
 		int idade = 0;
 		int calorias = 50;
 		int forca = 0;
@@ -55,38 +56,64 @@ public class Programa_Bichinho_virtual {
 		if(alimentar == 1) {
 			System.out.println("Escolha a comida que você deseja: ");
 		
-			System.out.println("1 - Cenoura: 20cal");
-			System.out.println("2 - Maçã: 15cal ");
-			System.out.println("3 - Frango: 50cal ");
-			System.out.println("4 - Peixe: 40cal ");
+			System.out.println("1 - Cenoura: 10 energia");
+			System.out.println("2 - Maçã: 15 energia ");			
+			System.out.println("3 - Peixe: 20 energia ");
+			System.out.println("4 - Frango: 25 energia ");
 			
 			int comida = sc.nextInt();
 			String tipoComida = "";
-			int caloriasComida = 0;
+			int energiaComida = 0;
 			
 			switch (comida) {
 			case 1:
 				tipoComida= "Cenoura";
-				caloriasComida = 20;
+				energiaComida = 10;
 			break;
 			case 2: 
 				tipoComida="Maçã";
-				caloriasComida = 15;
+				energiaComida = 15;
 				break;
 			case 3: 
-				tipoComida="Frango";
-				caloriasComida = 50;
+				tipoComida="Peixe";
+				energiaComida = 20;				
 				break;
 				
-			case 4: 
-				tipoComida="Peixe";
-				caloriasComida = 40;
+			case 4: 			
+				tipoComida="Frango";
+				energiaComida = 25;
 				break;
 			}
 
-			Bichinho.comer(tipoComida, caloriasComida);
+			Bichinho.comer(tipoComida, energiaComida);
 		}
 		
+		
+		System.out.println();
+		System.out.println("Gostaria de brincar? ");
+		System.out.println("Gasto energético: 30 ");
+		System.out.println("1 - Sim  | 2 - Não");
+		int brincar = sc.nextInt();
+		int energiaGasta = 0;
+		if(brincar == 1) {
+			forca += 10;
+			energiaGasta = -30;
+			
+			
+		}
+		
+		Bichinho.brincar(energiaGasta, forca);
+		
+		System.out.println();
+		System.out.println("Gostaria de dormir? ");
+		System.out.println("1 - Sim  | 2 - Não");
+		int dormir = sc.nextInt();
+		int energiaRecuperada = 0;
+		if(dormir == 1) {
+			 energiaRecuperada = 50;
+		}
+		
+		Bichinho.dormir(energiaRecuperada);
 	
 	sc.close();
 	
