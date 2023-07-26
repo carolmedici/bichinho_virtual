@@ -56,6 +56,7 @@ public class Programa_Bichinho_virtual {
 		if(alimentar == 1) {
 			System.out.println("Escolha a comida que você deseja: ");
 		
+<<<<<<< HEAD
 			System.out.println("1 - Cenoura: 10 energia");
 			System.out.println("2 - Maçã: 15 energia ");			
 			System.out.println("3 - Peixe: 20 energia ");
@@ -114,6 +115,57 @@ public class Programa_Bichinho_virtual {
 		}
 		
 		Bichinho.dormir(energiaRecuperada);
+=======
+			System.out.println("1 - Cenoura: 20cal");
+			System.out.println("2 - Maçã: 15cal ");
+			System.out.println("3 - Frango: 50cal ");
+			System.out.println("4 - Peixe: 40cal ");
+			
+			int comida = sc.nextInt();
+			String tipoComida = "";
+			int caloriasComida = 0;
+			
+			switch (comida) {
+			case 1:
+				tipoComida= "Cenoura";
+				caloriasComida = 20;
+			break;
+			case 2: 
+				tipoComida="Maçã";
+				caloriasComida = 15;
+				break;
+			case 3: 
+				tipoComida="Frango";
+				caloriasComida = 50;
+				break;
+				
+			case 4: 
+				tipoComida="Peixe";
+				caloriasComida = 40;
+				break;
+			}
+
+			Bichinho.comer(tipoComida, caloriasComida);
+		}
+		
+		
+		System.out.println();
+		System.out.println("Gostaria de brincar? ");
+		System.out.println("Gasto calórico: 10 cal");
+		System.out.println("1 - Sim  | 2 - Não");
+		int brincar = sc.nextInt();
+		int caloriasGasta = 0;
+		if(brincar == 1) {
+			forca += 10;
+			caloriasGasta = -10;
+			
+			
+		}
+		
+		Bichinho.brincar(caloriasGasta, forca);
+		
+		
+>>>>>>> branch 'main' of https://github.com/carolmedici/bichinho_virtual.git
 	
 	sc.close();
 	
