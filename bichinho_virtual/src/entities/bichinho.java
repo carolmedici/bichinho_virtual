@@ -85,7 +85,7 @@ public class bichinho {
 	}
 	
 	public void comer(String comida, int caloriasComida) {
-<<<<<<< HEAD
+
         energia += caloriasComida;
         System.out.println(nome 
 				+ " comeu "
@@ -98,26 +98,11 @@ public class bichinho {
 				+ ". Estado: Vivo"
 				+ ". Energia: "
 				+ energia
-=======
-        caloria += caloriasComida;
-        System.out.println(nome 
-				+ " comeu "
-				+ comida
-				+ " Dados atualizados."
-				+ " Idade: "
-				+ idade
-				+ " ano(s). Tipo: "
-				+ tipo
-				+ ". Estado: Vivo"
-				+ ". Calorias: "
-				+ caloria
->>>>>>> branch 'main' of https://github.com/carolmedici/bichinho_virtual.git
 				+ ". Força: "
 				+ forca
 				+ ".");
 	}
 	
-<<<<<<< HEAD
 	public void brincar( int energiaGasta, int forcaAdquirida) {
         energia += energiaGasta;
         forca += forcaAdquirida;
@@ -148,24 +133,12 @@ public class bichinho {
 				+ ". Estado: Vivo"
 				+ ". Energia: "
 				+ energia
-=======
-	public void brincar( int caloriasGasta, int forcaAdquirida) {
-        caloria += caloriasGasta;
-        forca += forcaAdquirida;
-        System.out.println(nome 
-				+ " brincou muito!"
-				+ " Dados atualizados."
-				+ " Idade: "
-				+ idade
-				+ " ano(s). Tipo: "
-				+ tipo
-				+ ". Estado: Vivo"
-				+ ". Calorias: "
-				+ caloria
->>>>>>> branch 'main' of https://github.com/carolmedici/bichinho_virtual.git
 				+ ". Força: "
 				+ forca
 				+ ".");
+
+	
 	}
 	
 }
+	
